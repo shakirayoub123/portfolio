@@ -14,30 +14,35 @@
             <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
             <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
             <p class="tab-links" @click="(event) => openTab('experience', event)">Experience</p>
+            <p class="tab-links" @click="(event) => openTab('internship', event)">Internship</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Programming Languages</span><br />HTML, CSS, JavaScript, ReactJs, VueJs, Bootstrap, Rest Api,
+              <li><span>Programming Languages</span><br /><br>HTML, CSS, JavaScript, ReactJs, VueJs, Bootstrap, Rest Api,
                 Redux, Vuex</li>
-              <li><span>Tools</span><br />Postman, IDE editors, Git, Netlify, Github, MySql, Xampp</li>
+              <li><span>Tools</span><br /><br>Postman, IDE editors, Git, Netlify, Github, MySql, Xampp</li>
               <!-- <li><span>Other Programming Languages</span><br/>Java (Android Studio), Python(Django)</li> -->
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>Started in 2022</span><br />MERN Stack Course from Masai School</li>
-              <li><span>2016 - 2020</span><br />Btech. from University of Jammu</li>
-              <li><span>Completed in 2015</span><br />Intermediate in Science from State Board</li>
-              <li><span>Completed in 2013</span><br />Matriculation from State Borad</li>
+              <li><span>Started in 2022</span><br /><br>MERN Stack Course from Masai School</li>
+              <li><span>2016 - 2020</span><br /><br>Btech. from University of Jammu</li>
+              <li><span>Completed in 2015</span><br /><br>Intermediate in Science from State Board</li>
+              <li><span>Completed in 2013</span><br /><br>Matriculation from State Borad</li>
             </ul>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Ladybird Web Solution</span><br />I am currently working as a Front-end Developer at Ladybird Web
+              <li><span>Ladybird Web Solution</span><br /><br>I am currently working as a Front-end Developer at Ladybird Web
                 Solution Pvt Ltd in Jammu</li>
             </ul>
           </div>
-
+          <div class="tab-contents" id="internship">
+            <ul>
+              <li><span>Yarikul Infotech Srinagar</span><br /><br>I have learnt HTML, CSS, Javascript and Bootstrap from here also i have started working on my college project</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -87,12 +87,5 @@ export const projects = [
         code: 'https://github.com/TahirAli32/todo',
         live: 'https://tahirali32.github.io/todo/'
     },
-    // {
-    //     name: '',
-    //     technology: '',
-    //     desc: '',
-    //     img: require('@/assets/projects/todos.jpg'),
-    //     code: '',
-    //     live: ''
-    // },
+
 ] 
