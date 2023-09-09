@@ -1,159 +1,129 @@
 <template>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitle">My Work</h1>
-            <div class="work-list">
-                <div class="work" v-for="project in projects" :key="project">
-                    <img :src="project.imgUrl" alt="work">
-                    <div class="layer">
-                        <h3>{{ project.name }}</h3>
-                        <p>{{ project.desc }}</p>
-                        <div style="display: flex;">
-                            <a target="_blank" :href=project.codeUrl><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" :href=project.liveUrl><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <router-link class="btn" to="/projects">
-                <p>See More</p>
-            </router-link>
-        </div>
-    </div>
-</template>
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Projects</h1>
 
+      <div class="services-list">
+        <div v-for="item in items" :key="item.id">
+          <h3 class="project">{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <p>{{ item.tools }}</p>
+          <p>
+            <a :href="item.tools" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github icons"></i>
+            </a>
+            &nbsp;&nbsp; <!-- Use a separator, e.g., a pipe symbol (|) with spaces -->
+            <a :href="item.live" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-deploydog" icons></i>
+            </a>
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</template>
+  
 <script>
-import { db } from '../firebase'
-import { collection, query, getDocs, where } from 'firebase/firestore'
+import { data } from '../data'
 
 export default {
-    name: 'Portfolio',
-    data() {
-        return {
-            projects: []
-        }
-    },
-    methods: {
-        async fetchFeaturedProjects() {
-            const q = query(collection(db, "projects"), where("featured", "==", true))
-            const querySnapshot = await getDocs(q)
-            querySnapshot.forEach(doc => {
-                this.projects.push(doc.data())
-            })
-        }
-    },
-    mounted() {
-        this.fetchFeaturedProjects()
-    }
-}
-
+  data() {
+    return {
+      items: data.items,
+    };
+  },
+  created() {
+    console.log('Fake response data:', this.items);
+  },
+};
 </script>
-
+  
 <style scoped>
-#portfolio {
-    padding: 15px 0 60px;
-    min-height: max-content;
+.project {
+  font-weight: bold;
+ margin-bottom: 10px;
 }
 
-.btn {
-    cursor: pointer;
+/* Add your CSS styles here */
+#services {
+  padding: 30px 0 25px;
 }
 
-.work-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 50px 10px 0;
-    padding: 0 30px;
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
 }
 
-.work {
-    height: 250px;
-    width: 350px;
-    margin: 20px auto;
-    border: .15rem solid #ff004f;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: all .5s;
+}
+.services-list div:hover {
+  background: #4f4f4f;
+  transform: translateY(-10px);
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;/* Adjust the box shadow on hover */
+}
+.services-list div i {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.work img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: transform .5s;
+.services-list h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
-.work:hover img {
-    transform: scale(1.1);
+.services-list p {
+  margin-bottom: 15px;
 }
 
-.layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    transition: height .5s;
-}
-
-.layer p {
-    padding: 0 5px;
-}
-
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a {
-    margin-top: 20px;
-    color: #ff004f;
-    font-size: 17px;
-    line-height: 40px;
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    margin: 20px 5px 0;
-}
-
-.work:hover .layer {
-    height: 100%;
+.services-list div:hover {
+  background: #4f4f4f;
+  ;
+  transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 600px) {
-    .work-list {
-        margin-top: 20px;
-        padding: 0;
-    }
+  #services {
+    padding: 30px 0 20px;
+  }
 
-    .work {
-        height: 225px;
-    }
+  .services-list {
+    gap: 25px;
+  }
 
-    h1 {
-        font-size: 50px;
-    }
+  .services-list div i {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 
-    .btn {
-        margin-top: 25px;
-    }
+  .services-list div h2 {
+    font-size: 25px;
+  }
 
-    .layer {
-        height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), #ff005167);
-    }
-}</style>
+  .services-list div,
+  .services-list div a,
+  .services-list div a i {
+    font-size: 12px;
+    letter-spacing: .01rem;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .services-list {
+    margin-top: 25px;
+  }
+}
+</style>
+  

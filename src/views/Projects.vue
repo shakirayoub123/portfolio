@@ -1,4 +1,4 @@
-<template>
+ <template>
 
 <div class="container">
     <div class='modal'>
@@ -150,4 +150,5 @@ export default {
         background: linear-gradient(rgba(0,0,0,0.6), #ff005167);
     }
 }
-</style>
+</style> 
+

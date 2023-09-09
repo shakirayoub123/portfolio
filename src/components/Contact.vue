@@ -16,8 +16,8 @@
                         <a target="_blank" href="https://www.hackerrank.com/shakirayoubbhat?hr_r=1"><i
                                 class="fa-brands fa-hackerrank"></i></a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1I2GlnmmeFa9UP2ONUwjxLsfAjTCF3rIr/view?usp=drive_link"
-                        target="_blank" class="btn btn2">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1vJOoI3a4HNU0LGvhnmZHYkf1SaooWxny/view?usp=drive_link"
+                        target="_blank" class="btn btn2 resume">Resume  <i class="fa-solid fa-file"></i></a>
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()" name="contactForm">
@@ -54,6 +54,7 @@ export default {
     },
     methods: {
         async handleSubmit() {
+            event.preventDefault(); 
             let form = document.forms['contactForm']
             let confirmation = document.getElementById("confirmation")
             let name = form[0].value
@@ -73,6 +74,10 @@ export default {
 </script>
 
 <style scoped>
+.btn2:hover{
+       box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7), 0 0 10px 10px rgba(255, 165, 0, 0.7), 0 0 30px 15px rgba(255, 255, 0, 0.7);
+      background-color: rgba(255, 0, 0, 0.5); /* Optional background color for added effect */
+}
 .none {
     display: none;
 }

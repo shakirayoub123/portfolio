@@ -10,15 +10,16 @@
                     <!-- <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a> -->
                 </div>
                 <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>Web Development</h2>
-                    <p>Back-end Logic Writing enabling server to interact with user using UI</p>
-                </div>
-                <div>
+           <i class="fas fa-crop-alt"></i>
+           <h2>Backend</h2>
+          <p>Exploring the world of back-end logic to enable server interactions with user interfaces.</p>
+</div>
+
+                <!-- <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Mobile App Developement</h2>
                     <p>Coming Soon</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -67,8 +68,8 @@ export default {
 }
 
 .services-list div:hover {
-    background: #ff004f;
-    transform: translateY(-10px);
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7), 0 0 20px 10px rgba(255, 165, 0, 0.7), 0 0 30px 15px rgba(255, 255, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.5); /* Optional background color for added effect */
 }
 
 @media only screen and (max-width: 600px) {
