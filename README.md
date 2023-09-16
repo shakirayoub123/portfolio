@@ -1,3 +1,2 @@
-# Portfolio of Muhammad Tahir Ali
+# Portfolio of Shakir Ayoub
 
-### [Visit Portfolio Now](https://tahirali-dc.netlify.app/)
