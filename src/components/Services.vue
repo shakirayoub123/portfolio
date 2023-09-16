@@ -5,24 +5,25 @@
             <div class="services-list">
                 <div>
                     <i class="fas fa-code"></i>
-                    <h2>Front-End Web Design</h2>
-                    <p>UI/UX Designing of Web App using Vanilla Js/React Js/Vue Js</p>
-                    <!-- <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a> -->
+                    <h2>Front-End Developer</h2>
+                    <p>Passionate about creating beautiful and intuitive web interfaces.</p>
                 </div>
-                <div>
-           <i class="fas fa-crop-alt"></i>
-           <h2>Backend</h2>
-          <p>Exploring the world of back-end logic to enable server interactions with user interfaces.</p>
-</div>
 
-                <!-- <div>
+            
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Backend Development</h2>
+                        <p>Continuously expanding my knowledge in backend development.</p>
+                    </div>
+
+                    <!-- <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Mobile App Developement</h2>
                     <p>Coming Soon</p>
                 </div> -->
+                </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -68,8 +69,10 @@ export default {
 }
 
 .services-list div:hover {
-    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7), 0 0 20px 10px rgba(255, 165, 0, 0.7), 0 0 30px 15px rgba(255, 255, 0, 0.7);
-  background-color: rgba(255, 0, 0, 0.5); /* Optional background color for added effect */
+    background: #4f4f4f;
+    transform: translateY(-10px);
+    box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+    /* Adjust the box shadow on hover */
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,4 +107,5 @@ export default {
     .services-list {
         margin-top: 25px;
     }
-}</style>
+}
+</style>

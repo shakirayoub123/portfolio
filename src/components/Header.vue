@@ -14,27 +14,26 @@
         <i class="fas fa-bars" @click="openMenu()"></i>
       </nav>
       <div id="box">
-      <div class="header-text">
-        <p>Front End Developer</p>
-        <h1>Hi, I'm <span>Shakir Ayoub</span><br/> from Kashmir</h1>
-      </div>
-      <div>
-        <img id="imggif" src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966">
+        <div class="header-text">
+
+          <h1>Hi, I'm <span>Shakir Ayoub</span><br /> a Front End Developer</h1>
+        </div>
+        <div>
+        <img id="imggif" src="https://camo.githubusercontent.com/93a438565e31dd396c21194436b0f7920889e1d552741112e1513dd2fe1a993a/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f38312f31372f38622f38313137386234376138353938663063383163343739396632636464343035372e676966">
        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
 export default {
   name: 'Header',
   methods: {
-    openMenu(){
+    openMenu() {
       document.querySelector('ul').classList.add('menuSidebar')
     },
-    closeMenu(){
+    closeMenu() {
       document.querySelector('ul').classList.remove('menuSidebar')
     },
   },
@@ -42,59 +41,68 @@ export default {
 </script>
 
 <style scoped>
-#logo{
-  height:40px;
+#logo {
+  height: 40px;
   width: 110px;
   padding-top: 7px;
 }
-#box{
-  display: flex;
+
+#box {
+  /* display: flex; */
 
 }
-#imggif{
-  height: 321px;
-    width: 338px;
-    margin-top: 86px;
-    margin-left: 20px;
-    border-radius: 21px;
+
+#imggif {
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
 }
-.menuSidebar{
+
+.menuSidebar {
   position: fixed;
   right: 0;
 }
-#header{
+
+#header {
   width: 100%;
-  height: 100vh;
-  /* background-image: url('.././assets/background.png'); */
-  background-image: url('');
+  background-image: url('https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2369&q=80');
+  background-image: url('https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2369&q=80');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 }
-nav .fas{
+
+nav .fas {
   display: none;
 }
-.container{
+
+.container {
   /* padding: 10px 10%; */
   padding: 0 10%;
 }
-nav{
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
   content: '';
   width: 0%;
   height: 3px;
@@ -104,38 +112,51 @@ nav ul li a::after{
   bottom: -6px;
   transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
   width: 100%;
 }
-.header-text{
+nav ul li a:hover{
+
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;/* Adjust the box shadow on hover */
+}
+
+.header-text {
   margin-top: 15%;
   font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
   font-size: 60px;
   margin-top: 20px;
   /* width: 40%; */
 }
-.header-text h1 span{
+
+.header-text h1 span {
   color: #ff004f;
 }
-@media only screen and (max-width: 600px){
-  #header{
+
+@media only screen and (max-width: 600px) {
+  #header {
     /* background-image: url('../assets/phone-background.png'); */
   }
-  .header-text{
-    margin-top: 80%;
+
+  .header-text {
+    /* margin-top: 80%; */
     font-size: 16px;
   }
-  .header-text h1{
+
+  .header-text h1 {
     font-size: 30px;
   }
-  nav .fas{
+
+  nav .fas {
     display: block;
     font-size: 25px;
     cursor: pointer;
   }
-  nav ul{
+
+  nav ul {
     background: #ff004f;
     position: fixed;
     top: 0;
@@ -147,15 +168,16 @@ nav ul li a:hover::after{
     z-index: 2;
     transition: all 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul .fas{
+
+  nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-}
-</style>
+}</style>
