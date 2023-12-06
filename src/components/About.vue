@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div class="card" id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
@@ -7,9 +7,11 @@
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
-          <p>I am currently working as a Front-end Developer at Ladybird Web Solution in Jammu. With strong
-            problem-solving skills and extensive experience in creating and designing websites,I am highly motivated and
-            skilled, with a Bachelor's degree in Computer Science and a passion for innovation</p>
+          <p>I'm actively contributing as a Front-end Developer at <span class="red-letter">Ladybird Web Solution</span>
+            in Jammu.
+            Leveraging robust problem-solving abilities and years of expertise in crafting cutting-edge websites, I'm
+            deeply driven and proficient. Holding a Bachelor's degree in Computer Science fuels my innovation and
+            passion for pushing boundaries in web development.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
             <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
@@ -22,7 +24,7 @@
                 <h2>Languages</h2>
                 <div class="skills-buttons">
                   <button class="skills-button" v-for="(language, index) in programmingLanguages" :key="index"
-                    :style="{ backgroundColor: getRandomColor() }">
+                          :style="{ backgroundColor: getRandomColor() }">
                     {{ language }}
                   </button>
                 </div>
@@ -31,52 +33,67 @@
                 <h2>Tools</h2>
                 <div class="skills-buttons">
                   <button class="skills-button tool-button" v-for="(tool, index) in toolsList" :key="index"
-                    :style="{ backgroundColor: getRandomColor() }">
+                          :style="{ backgroundColor: getRandomColor() }">
                     {{ tool }}
                   </button>
                 </div>
               </div>
-
-
             </ul>
           </div>
+
+          <!-- education-->
           <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Nov-2022 - Jan-2023</span><br /><br>MERN Stack Course from Masai School</li>
-              <li><span>2016 - 2020</span><br /><br>Strengthened my expertise with B.Tech. in Computer Science from the
-                University of Jammu.</li>
-              <li><span>2015</span><br /><br>Built my knowledge base through Science Intermediate from the State Board.
-              </li>
-              <li><span>2013</span><br /><br>Matriculation from State Board</li>
-            </ul>
-
+            <div class="education-cards ">
+              <div class="education-card" v-for="(education, index) in educationDetails" :key="index">
+                <div class="heading">{{ education.heading }}</div>
+                <div class="period "><span class="session">Session: </span>{{ education.period }}</div>
+                <div class="details"><span class="session">Course: </span>{{ education.details }}</div>
+              </div>
+            </div>
           </div>
+
+          <!--          experiance-->
           <div class="tab-contents" id="experience">
             <ul>
               <li>
-                <strong class="skills-button">Ladybird Web Solution</strong><br /><br />
-                As a dedicated Front-end Developer at Ladybird Web Solution Pvt Ltd in Jammu, I play a pivotal role in
-                crafting captivating user experiences. My responsibilities encompass translating design concepts into
-                interactive and responsive web applications. Through my work, I contribute to creating impactful digital
-                solutions that seamlessly merge aesthetics with functionality.
+                <h2 class="heading">Ladybird Web Solution</h2>
+                <p class="text-data"> Embarked on a dynamic journey as an Intern at Ladybird web
+                  solution, contributing to the innovation behind <span class="red-letter">Faveo</span> Help-desk.
+                  Collaborated closely with software artisans, co-crafting solutions
+                  that catered to diverse client needs.
+                  Evolved into an Associate Developer post-internship, weaving my
+                  code into the fabric of Faveo's development.</p>
               </li>
               <h2>Skills Learned in LWS</h2>
-              <div class="skills-buttons">
+              <div class="skills-buttons mb-1">
                 <button class="skills-button" v-for="(language, index) in programmingLanguages" :key="index"
-                  :style="{ backgroundColor: getRandomColor() }">
+                        :style="{ backgroundColor: getRandomColor() }">
                   {{ language }}
                 </button>
               </div>
             </ul>
-
           </div>
+
+<!--          Internships-->
           <div class="tab-contents" id="internship">
             <ul>
-              <strong class='skills-button'>Yarikul Infotech Srinagar</strong>
-              <li><br /><br>
-                I have learned HTML, CSS, JavaScript, and Bootstrap during my internship at Yarikul Infotech Srinagar.
-                I also started working on my college project, where I took the opportunity to apply the skills I gained.
+              <h2>Yarikul Infotech Srinagar Internship</h2>
+              <li>
+               <p class="text-data">
+                 During my tenure at <span class="red-letter"> Yarikul Infotech Srinagar</span>,
+                 I acquired expertise in HTML, CSS, JavaScript, and Bootstrap.
+                 This hands-on experience significantly enhanced my skills, which I further applied to my college projects,
+                 demonstrating practical proficiency.
+               </p>
               </li>
+            </ul>
+            <ul>
+              <h2 class="text-data">Ladybird Web Solution pvt ltd</h2>
+              <p class="text-data">
+                I embarked on a fulfilling journey at <span class="red-letter">Ladybird Web Solution</span>,
+                where I underwent a comprehensive three-month internship. During this period, I immersed myself in HTML, CSS, JavaScript, Bootstrap, Vue.js, Vuex, and Testutils, channeling these skills towards practical
+                applications and gaining valuable hands-on experience.
+              </p>
             </ul>
           </div>
         </div>
@@ -92,14 +109,35 @@ export default {
   name: 'About',
   data() {
     return {
-      // ... other data properties
       programmingLanguages: [
-        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'VueJs', 'Bootstrap', 'Rest Api', 'Redux', 'Vuex', 'TDS'
+        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'VueJs', 'Bootstrap', 'Rest Api', 'Redux', 'Vuex', 'TDS', 'PHP', 'Wordpress'
       ],
       toolsList: [
-        'Postman', 'IDE editors', 'Git', 'Netlify', 'Github', 'MySql', 'Xampp'
+        'Postman', 'IDE editors', 'Git', 'Netlify', 'Github', 'MySql', 'Xampp', 'Testutils',
       ],
       showTools: false,
+      educationDetails: [
+        {
+          heading: 'MASAI SCHOOL',
+          period: '2022 - 2023',
+          details: 'MERN Stack',
+        },
+        {
+          heading: 'MIET Jammu',
+          period: '2016 - 2020',
+          details: 'Bachelor of Engineering',
+        },
+        {
+          heading: 'JKBOSE',
+          period: '2014 - 2015',
+          details: 'Intermediate (12th)',
+        },
+        {
+          heading: 'JKBOSE',
+          period: '2013 - 2014',
+          details: 'Matriculation (10th)',
+        },
+      ],
     };
   },
 
@@ -127,8 +165,68 @@ export default {
 </script>
 
 <style scoped>
-.tool-button {
-  background-color: #ff004f;
+.text-data{
+  font-style: italic;
+}
+.red-letter {
+  color: #ff004f;
+}
+
+.education-card:hover {
+  background: #4f4f4f;
+  transform: translateY(-10px);
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+  transition-delay: 0.2s;
+}
+
+.period {
+  font-style: italic;
+}
+
+.session {
+  color: white;
+  font-weight: bold;
+}
+
+.education-card .heading {
+  color: white;
+  font-weight: bold;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.education-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #4f4f4f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(50% - 20px);
+}
+
+.card {
+  background-color: #080808;
+}
+
+.subtitle {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* New styles for the underline */
+.subtitle::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 40%; /* Adjust the width of the underline as needed */
+  height: 2px;
+  background-color: #ff004f; /* Your desired underline color */
 }
 
 .tool-button:hover {
@@ -231,8 +329,6 @@ export default {
   .subtitle {
     font-size: 40px;
   }
-
-
 
   .row {
     display: flex;

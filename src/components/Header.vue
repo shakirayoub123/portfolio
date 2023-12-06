@@ -2,12 +2,11 @@
   <div id="header">
     <div class="container">
       <nav>
-        <a href="/"><img id="logo" src="../assets/Screen.png" alt="logo"></a>
+          <h1><span class="red-letter">S</span>HAKIR</h1>
         <ul id="sidemenu">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fas fa-times" @click="closeMenu()"></i>
         </ul>
@@ -15,8 +14,7 @@
       </nav>
       <div id="box">
         <div class="header-text">
-
-          <h1>Hi, I'm <span>Shakir Ayoub</span><br /> a Front End Developer</h1>
+          <h1>Hi, I'm <span>Shakir Ayoub</span><br /> a Software Developer</h1>
         </div>
         <div>
         <img id="imggif" src="https://camo.githubusercontent.com/93a438565e31dd396c21194436b0f7920889e1d552741112e1513dd2fe1a993a/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f38312f31372f38622f38313137386234376138353938663063383163343739396632636464343035372e676966">
@@ -41,20 +39,20 @@ export default {
 </script>
 
 <style scoped>
-#logo {
-  height: 40px;
-  width: 110px;
-  padding-top: 7px;
+.red-letter{
+  color:#ff004f;
 }
-
-#box {
-  /* display: flex; */
-
+#logo {
+  height: 60px;
+  width: 350px;
+  max-width: 110px;
+  padding-top: 7px;
 }
 
 #imggif {
   max-width: 100%;
   height: 400px;
+  width: 80%;
   display: flex;
   margin: auto;
   border-radius: 20px;
@@ -116,10 +114,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-nav ul li a:hover{
-
-  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;/* Adjust the box shadow on hover */
-}
 
 .header-text {
   margin-top: 15%;
@@ -180,4 +174,5 @@ nav ul li a:hover{
     left: 25px;
     cursor: pointer;
   }
+
 }</style>
