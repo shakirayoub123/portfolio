@@ -151,7 +151,7 @@ nav ul li a:hover::after {
   }
 
   nav ul {
-    background: #ff004f;
+    //background: #ff004f;
     position: fixed;
     top: 0;
     display: block;
@@ -170,9 +170,10 @@ nav ul li a:hover::after {
 
   nav ul .fas {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 47px;
+    left: 78px;
     cursor: pointer;
   }
+  }
 
-}</style>
+</style>
