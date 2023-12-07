@@ -4,9 +4,6 @@
       <div class="row">
         <div class="about-col-1">
           <img src="../assets/IMG_20230312_001125_915.jpg" alt="">
-          <div class="heading mt-4">
-            <h2>Certificates</h2>
-          </div>
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
@@ -106,59 +103,56 @@
     </div>
 
     <!--    test-->
+    <div class="heading mt-4">
+      <h2 >Certificates</h2>
+    </div>
     <div class="row cont">
-      <div class="card cont1">
-          <div class="card bg-light">
-            <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
-            <div class="card-body">
-<!--              <h2 class="card-title">HackerRank</h2>-->
-              <p class="card-subtitle">Received the JavaScript Certificate from <span style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing proficiency in fundamental and advanced concepts</p>
-                <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
-            </div>
-          </div>
-        </div>
-      <div class="card cont1">
-        <div class="card bg-light">
-          <img style="height: 220px; object-fit: cover;" src="../assets/img_1.png" class="card-img-top" alt="Card image" >
+      <div class="card cont1 bg-light">
+        <div class="card  cont2 bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image">
           <div class="card-body">
-            <p class="card-subtitle">Received the Problem Solving from <span style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing proficiency in fundamental and advanced concepts</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+            <!--              <h2 class="card-title">HackerRank</h2>-->
+            <p class="card-subtitle">Received the JavaScript Certificate from <span
+                style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing proficiency in fundamental and
+              advanced concepts</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing"
+               class="footer">View</a>
           </div>
         </div>
       </div>
-      <div class="card cont1">
-        <div class="card bg-light">
-          <img style="height: 220px; object-fit: cover;" src="../assets/img_2.png" class="card-img-top" alt="Card image" >
+      <div class="card cont1 bg-light">
+        <div class="card  cont2 bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img_1.png" class="card-img-top"
+               alt="Card image">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+            <p class="card-subtitle">Received the Problem Solving from <span style="color: #1ba94c; font-weight: bold">HackerRank</span>,
+              showcasing proficiency in fundamental and advanced concepts</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing"
+               class="footer">View</a>
           </div>
         </div>
       </div>
-      <div class="card cont1">
-        <div class="card bg-light">
-          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+      <div class="card cont1 bg-light">
+        <div class="card  cont2 bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/php-mysql.jpg" class="card-img-top"
+               alt="Card image">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+            <p class="card-text">Acknowledges successful completion of the PHP and MySQL test, conducted at MIET, utilizing course material from the <span style="color: #1ba94c; font-weight: bold">Spoken Tutorial, IIT Bombay.</span></p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing"
+               class="footer">View</a>
           </div>
         </div>
       </div>
-      <div class="card cont1">
-        <div class="card bg-light">
-          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+      <div class="card cont1 bg-light">
+        <div class="card  cont2 bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/react.png" class="card-img-top"
+               alt="Card image">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="card cont1">
-        <div class="card bg-light">
-          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+            <p class="card-text">Earned React proficiency on <span
+                style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing expertise in crafting dynamic
+              UIs, state management, and building innovative web apps.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing"
+               class="footer">View</a>
           </div>
         </div>
       </div>
@@ -229,6 +223,34 @@ export default {
 </script>
 
 <style scoped>
+.heading h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+a{
+ display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #0598da;
+}
+a:hover{
+  color: #067bb7;
+  transform: scale(1.1); /* Adjust the scale factor as desired */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.cont2{
+  overflow: hidden;
+
+}
+.cont2 img{
+  transform: translateY(0);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.cont2:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as desired */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
 .card-title {
   font-size: 14px;
   font-weight: bold;
@@ -241,16 +263,25 @@ export default {
   font-style: italic;
   margin-bottom: 15px;
 }
-.cont{
+
+.cont {
   display: grid;
   grid-template-columns: repeat(2, 37%);
   justify-content: center;
   gap: 20px; /* Adjust spacing between cards */
 }
+
 .cont1 {
-  //border: 1px solid #ccc;
   padding: 20px;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
+ .cont1:hover{
+   transform: translateY(-10px);
+   box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+   transition-delay: 0.2s;
+}
+
 .text-data {
   font-style: italic;
 }
