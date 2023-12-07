@@ -4,6 +4,9 @@
       <div class="row">
         <div class="about-col-1">
           <img src="../assets/IMG_20230312_001125_915.jpg" alt="">
+          <div class="heading mt-4">
+            <h2>Certificates</h2>
+          </div>
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
@@ -74,27 +77,88 @@
             </ul>
           </div>
 
-<!--          Internships-->
+          <!--          Internships-->
           <div class="tab-contents" id="internship">
             <ul>
-              <h2>Yarikul Infotech Srinagar Internship</h2>
+              <h2>Yarikul Infotech Srinagar</h2>
               <li>
-               <p class="text-data">
-                 During my tenure at <span class="red-letter"> Yarikul Infotech Srinagar</span>,
-                 I acquired expertise in HTML, CSS, JavaScript, and Bootstrap.
-                 This hands-on experience significantly enhanced my skills, which I further applied to my college projects,
-                 demonstrating practical proficiency.
-               </p>
+                <p class="text-data rounded" style="background-color: #4f4f4f; color: white; padding: 15px">
+                  During my tenure at <span class="red-letter"> Yarikul Infotech Srinagar</span>,
+                  I acquired expertise in HTML, CSS, JavaScript, and Bootstrap.
+                  This hands-on experience significantly enhanced my skills, which I further applied to my college
+                  projects,
+                  demonstrating practical proficiency.
+                </p>
               </li>
             </ul>
             <ul>
               <h2 class="text-data">Ladybird Web Solution pvt ltd</h2>
-              <p class="text-data">
+              <p class="text-data rounded" style="background-color: #4f4f4f; color: white; padding: 15px">
                 I embarked on a fulfilling journey at <span class="red-letter">Ladybird Web Solution</span>,
-                where I underwent a comprehensive three-month internship. During this period, I immersed myself in HTML, CSS, JavaScript, Bootstrap, Vue.js, Vuex, and Testutils, channeling these skills towards practical
+                where I underwent a comprehensive three-month internship. During this period, I immersed myself in HTML,
+                CSS, JavaScript, Bootstrap, Vue.js, Vuex, and Testutils, channeling these skills towards practical
                 applications and gaining valuable hands-on experience.
               </p>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    test-->
+    <div class="row cont">
+      <div class="card cont1">
+          <div class="card bg-light">
+            <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+            <div class="card-body">
+<!--              <h2 class="card-title">HackerRank</h2>-->
+              <p class="card-subtitle">Received the JavaScript Certificate from <span style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing proficiency in fundamental and advanced concepts</p>
+                <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+            </div>
+          </div>
+        </div>
+      <div class="card cont1">
+        <div class="card bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img_1.png" class="card-img-top" alt="Card image" >
+          <div class="card-body">
+            <p class="card-subtitle">Received the Problem Solving from <span style="color: #1ba94c; font-weight: bold">HackerRank</span>, showcasing proficiency in fundamental and advanced concepts</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cont1">
+        <div class="card bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img_2.png" class="card-img-top" alt="Card image" >
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cont1">
+        <div class="card bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cont1">
+        <div class="card bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cont1">
+        <div class="card bg-light">
+          <img style="height: 220px; object-fit: cover;" src="../assets/img.png" class="card-img-top" alt="Card image" >
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1oLGFxcEEtow_anB4z94NbeStxyYPl6ns/view?usp=sharing" class="footer">View</a>
           </div>
         </div>
       </div>
@@ -165,9 +229,32 @@ export default {
 </script>
 
 <style scoped>
-.text-data{
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.cont{
+  display: grid;
+  grid-template-columns: repeat(2, 37%);
+  justify-content: center;
+  gap: 20px; /* Adjust spacing between cards */
+}
+.cont1 {
+  //border: 1px solid #ccc;
+  padding: 20px;
+}
+.text-data {
   font-style: italic;
 }
+
 .red-letter {
   color: #ff004f;
 }
