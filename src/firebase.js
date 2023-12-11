@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: process.env.VUE_APP_APIKEY,
+  apiKey: process.env.AIzaSyCN3yP8TKWZFklHyLB2J6rxXvViZYC7LyM,
   authDomain: process.env.VUE_APP_AUTHDOMAIN,
   projectId: process.env.VUE_APP_PROJECTID,
   storageBucket: process.env.VUE_APP_STORAGEBUCKET,

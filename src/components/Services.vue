@@ -5,22 +5,14 @@
             <div class="services-list">
                 <div>
                     <i class="fas fa-code"></i>
-                    <h2>Front-End Developer</h2>
+                    <h2>Front-End Development</h2>
                     <p>Passionate about creating beautiful and intuitive web interfaces.</p>
                 </div>
-
-            
-                    <div>
+                  <div>
                         <i class="fas fa-crop-alt"></i>
                         <h2>Backend Development</h2>
-                        <p>Continuously expanding my knowledge in backend development.</p>
+                        <p>Continuously expanding my knowledge in backend development, as started working on NodeJs</p>
                     </div>
-
-                    <!-- <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Mobile App Developement</h2>
-                    <p>Coming Soon</p>
-                </div> -->
                 </div>
             </div>
         </div>

@@ -18,7 +18,21 @@
             </a>
           </p>
         </div>
+        <Modal v-if="showModal" :showModal="showModal" :onClose="onClose">
 
+          <template #title>
+
+            <h4 class="modal-title">description</h4>
+          </template>
+
+          <template #fields>
+
+            <div id="log_desc">
+
+              <span>description</span>
+            </div>
+          </template>
+        </Modal>
 
       </div>
     </div>
@@ -27,12 +41,21 @@
   
 <script>
 import { data } from '../data'
+import Modal from "@/components/Modal.vue";
 
 export default {
+  components: {Modal},
   data() {
     return {
       items: data.items,
+      showModal:false,
     };
+  },
+  props:{
+    onClose: {
+      type: Function, default: () => {
+      }
+    },
   },
   created() {
     console.log('Fake response data:', this.items);
@@ -53,7 +76,7 @@ export default {
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns:repeat(3,1fr);
   gap: 40px;
   margin-top: 50px;
 }

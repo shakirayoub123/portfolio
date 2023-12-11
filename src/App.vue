@@ -76,7 +76,7 @@ html {
   background: #ff004f;
 }
 .subtitle{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   color: #fff;
 }
