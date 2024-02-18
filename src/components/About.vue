@@ -21,7 +21,7 @@
           <div class="tab-contents active-tab" id="skills">
             <ul>
               <div class="tab-content" :class="{ active: activeTab === 'skills' }">
-                <h2>Languages</h2>
+                <h2>Skills</h2>
                 <div class="skills-buttons">
                   <button class="skills-button" v-for="(language, index) in programmingLanguages" :key="index"
                           :style="{ backgroundColor: getRandomColor() }">
@@ -168,7 +168,7 @@ export default {
   data() {
     return {
       programmingLanguages: [
-        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'VueJs', 'Bootstrap', 'Rest Api', 'Redux', 'Vuex', 'TDS', 'PHP', 'Wordpress'
+        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'VueJs', 'Bootstrap', 'Rest Api', 'Redux', 'Vuex', 'PHP', 'Wordpress', 'NodeJs', 'Express',
       ],
       toolsList: [
         'Postman', 'IDE editors', 'Git', 'Netlify', 'Github', 'MySql', 'Xampp', 'Testutils',

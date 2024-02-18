@@ -17,7 +17,7 @@
           <h1>Hi, I'm <span>Shakir Ayoub</span><br /> a Software Developer</h1>
         </div>
         <div>
-        <img id="imggif" src="https://camo.githubusercontent.com/93a438565e31dd396c21194436b0f7920889e1d552741112e1513dd2fe1a993a/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f38312f31372f38622f38313137386234376138353938663063383163343739396632636464343035372e676966">
+        <img id="imggif" src="../assets/giphy.gif">
        </div>
       </div>
     </div>

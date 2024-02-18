@@ -11,7 +11,7 @@
                   <div>
                         <i class="fas fa-crop-alt"></i>
                         <h2>Backend Development</h2>
-                        <p>Continuously expanding my knowledge in backend development, as started working on NodeJs</p>
+                        <p>Continuously expanding my knowledge in backend development, as started working on NodeJs and Laravel</p>
                     </div>
                 </div>
             </div>
