@@ -6,8 +6,7 @@ Skills & Expertise: Highlight my proficiency in various technologies, frameworks
 About Me: Provide information about myself, my background, and my interests.
 Contact: Offer a convenient way for visitors to get in touch with me.
 # Technologies Used
-Vue.js
-HTML, CSS, JAVASCRIPT AND BOOTSTRAP
+HTML, CSS, JAVASCRIPT, BOOTSTRAP and Vue.js
 # Installation
 To run this project locally, follow these steps:
 
